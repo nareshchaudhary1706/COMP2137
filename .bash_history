@@ -102,3 +102,65 @@ sudo groupadd incus
 sudo groupadd incus-admin
 sudo usermod -aG incus,incus-admin $USER
 sudo reboot
+makecontainers.sh --count 2 --fresh --prefix server
+find / -name makecontainers.sh 2>/dev/null
+cd /home/student
+./makecontainers.sh --count 2 --fresh --prefix server
+chmod +x /home/student/makecontainers.sh
+./makecontainers.sh --count 2 --fresh --prefix server
+cd /home/student
+./makecontainers.sh --count 2 --fresh --prefix server
+makecontainers.sh --count 2 --fresh --prefix server
+wget -O makecontainers.sh "https://example.com/path/to/new/makecontainers.sh"
+chmod +x makecontainers.sh
+./makecontainers.sh --count 2 --fresh --prefix server
+wget -O makecontainers.sh "https://github.com/zonzorp/COMP2137/raw/main/makecontainers.sh"
+chmod +x makecontainers.sh
+./makecontainers.sh --count 2 --fresh --prefix server
+makecontainers.sh --count 2 --fresh --prefix server
+sudo mv makecontainers.sh /usr/local/bin/
+sudo chmod +x /usr/local/bin/makecontainers.sh
+makecontainers.sh --count 2 --fresh --prefix server
+ps aux | grep makecontainers.sh
+kill 3539
+kill 3913
+chmod +x makecontainers.sh
+./makecontainers.sh --count 2 --fresh --prefix server
+chmod +x makecontainers.sh
+./makecontainers.sh --count 2 --fresh --prefix server
+ls ~
+cd ~
+ls
+chmod +x makecontainers.sh
+wget -O ~/makecontainers.sh https://github.com/zonzorp/COMP2137/raw/main/makecontainers.sh
+ls ~
+chmod +x ~/makecontainers.sh
+~/makecontainers.sh --count 2 --fresh --prefix server
+lsof /home/student/makecontainers.sh
+sudo reboot
+ip a
+hostname -I
+~/makecontainers.sh --count 2 --fresh --prefix server
+ssh remoteadmin@server1-mgmt
+ssh remoteadmin@server2-mgmt
+configure-host.sh
+nano ~/configure-host.sh
+chmod +x ~/configure-host.sh
+# Change the hostname to 'myhostname' and the IP address to '192.168.1.2'
+./configure-host.sh -name myhostname -ip 192.168.1.2 -verbose
+nano ~/lab3.sh
+chmod +x ~/lab3.sh
+./lab3.sh -verbose
+./lab3.sh
+sudo apt-get install openssh-client
+chmod +x configure-host.sh
+cd ~/COMP2137
+git add lab3.sh configure-host.sh
+git commit -m "Added lab3.sh and configure-host.sh for lab submission"
+git push
+ls
+nano lab3.sh
+git add lab3.sh
+git commit -m "Added lab3.sh script"
+git push
+exit
